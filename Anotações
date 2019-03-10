@@ -1,0 +1,21 @@
+//Jquery wrapper = embrulha o código por segurança
+//debugger utilizado para verificar se os eventos input(quando digita) e (focusout) quando sai do campo
+estão funcionando
+$(function(){
+    //ações
+    var onlyNumbers = function(){
+        debugger;
+    }
+
+    var getAdress = function(){
+        debugger;
+    }
+
+    //eventos
+    $("#cep")
+    .on("input", onlyNumbers)
+    .on("focusout", getAdress);
+
+});
+
+$("input").fadeOut().delay(3000).fadeIn(); //código encadeado, esconde, colocadelay e aparece com efeito na sequencia.
